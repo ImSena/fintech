@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,27 +17,29 @@
 </head>
 
 <body>
-
     <header>
         <nav>
             <div>
-                <button>
+                <button class="button_menu btn">
                     <i class="fa-regular fa-user"></i>
                 </button>
             </div>
 
             <div>
-                <button>
+                <button class="button_menu btn">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </nav>
 
-        <div>
-            <input type="search" name="pesquisa" id="search" placeholder="Pesquisar">
+        <div class="search_content">
+            <label for="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+            <input type="search" class="field" name="pesquisa" id="search" placeholder="Pesquisar">
         </div>
 
-        <div>
+        <div id="amount">
             <div>
                 <i class="fa-solid fa-eye-slash"></i>
                 <span>Ocultar Saldo</span>
@@ -45,47 +47,139 @@
             </div>
 
             <div>
-                R$ 5036,13
+                <span id="value_total">R$ 5036,13</span>
             </div>
         </div>
     </header>
 
-    <main>
-        <nav>
-            <div>
-                <button>
+    <main class="container">
+        <nav id="content_actions">
+            <div class="button_actions">
+                <button class="btn">
                     <i class="fa-solid fa-circle-plus"></i>
-                    Adicionar
                 </button>
+                <span>Adicionar</span>
             </div>
-            <div>
-                <button>
+            <div class="button_actions">
+                <button class="btn">
                     <i class="fa-solid fa-circle-minus"></i>
-                    Retirar
                 </button>
+                <span>Retirar</span>
             </div>
-            <div>
-                <button>
+            <div class="button_actions">
+                <button class="btn">
                     <i class="fa-solid fa-briefcase"></i>
-                    Serviços
                 </button>
+                <span>Serviços</span>
             </div>
-            <div>
-                <button>
+            <div class="button_actions">
+                <button class="btn">
                     <i class="fa-solid fa-piggy-bank"></i>
-                    Metas
                 </button>
+                <span>Metas</span>
             </div>
-            <div>
-                <button>
+            <div class="button_actions">
+                <button class="btn">
                     <i class="fa-solid fa-square-poll-vertical"></i>
-                    Aplicações
                 </button>
+                <span>Aplicações</span>
             </div>
         </nav>
 
-        <section>
-            
+        <section id="overview">
+
+            <div id="button_overview">
+                <button class="button_action active">
+                    <span>Histórico</span>
+                </button>
+
+                <button class="button_action">
+                    <span>Relatórios</span>
+                </button>
+            </div>
+
+            <div class="container">
+                <div id="historico">
+                    <div class="transacao">
+                        <div class="type">     
+                            <div class="content_img">
+                                <img src="https://placehold.co/40" alt="">
+                            </div>
+                            <div class="description">
+                                <span>Transação Ok</span>
+                                <span>09 de Setembro</span>
+                            </div>
+                        </div>
+                        <div class="valor color_error">
+                            <span>-R$30,07</span>
+                        </div>
+                    </div>
+                    <div class="transacao">
+                        <div class="content_img">
+                            <img src="https://placehold.co/40" alt="">
+                        </div>
+                        <div class="description">
+                            <span>Transação Ok</span>
+                            <span>09 de Setembro</span>
+                        </div>
+                        <div class="valor color_success">
+                            <span>+R$3000,00</span>
+                        </div>
+                    </div>
+                    <div class="transacao">
+                        <div class="content_img">
+                            <img src="https://placehold.co/40" alt="">
+                        </div>
+                        <div class="description">
+                            <span>Transação Ok</span>
+                            <span>09 de Setembro</span>
+                        </div>
+                        <div class="valor color_success">
+                            <span>+R$200,00</span>
+                        </div>
+                    </div>
+                    <div class="transacao">
+                        <div class="content_img">
+                            <img src="https://placehold.co/40" alt="">
+                        </div>
+                        <div class="description">
+                            <span>Transação Ok</span>
+                            <span>09 de Setembro</span>
+                        </div>
+                        <div class="valor color_error">
+                            <span>-R$312,22</span>
+                        </div>
+                    </div>
+                    <div class="transacao">
+                        <div class="content_img">
+                            <img src="https://placehold.co/40" alt="">
+                        </div>
+                        <div class="description">
+                            <span>Transação Ok</span>
+                            <span>09 de Setembro</span>
+                        </div>
+                        <div class="valor color_error">
+                            <span>-R$312,22</span>
+                        </div>
+                    </div>
+                    <div class="transacao">
+                        <div class="content_img">
+                            <img src="https://placehold.co/40" alt="">
+                        </div>
+                        <div class="description">
+                            <span>Transação Ok</span>
+                            <span>09 de Setembro</span>
+                        </div>
+                        <div class="valor color_error">
+                            <span>-R$30,07</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="relatorio">
+                    
+                </div>
+            </div>
         </section>
     </main>
 
