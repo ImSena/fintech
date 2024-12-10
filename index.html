@@ -17,176 +17,246 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div>
-                <button class="button_menu btn">
-                    <i class="fa-regular fa-user"></i>
-                </button>
-            </div>
-
-            <div>
-                <button class="button_menu btn">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-        </nav>
-
-        <div class="search_content">
-            <label for="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </label>
-            <input type="search" class="field" name="pesquisa" id="search" placeholder="Pesquisar">
-        </div>
-
-        <div id="amount">
-            <div>
-                <i class="fa-solid fa-eye-slash"></i>
-                <span>Ocultar Saldo</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-
-            <div>
-                <span id="value_total">R$ 5036,13</span>
-            </div>
-        </div>
-    </header>
-
-    <main class="container">
-        <nav id="content_actions">
-            <div class="button_actions">
-                <button class="btn">
-                    <i class="fa-solid fa-circle-plus"></i>
-                </button>
-                <span>Adicionar</span>
-            </div>
-            <div class="button_actions">
-                <button class="btn">
-                    <i class="fa-solid fa-circle-minus"></i>
-                </button>
-                <span>Retirar</span>
-            </div>
-            <div class="button_actions">
-                <button class="btn">
-                    <i class="fa-solid fa-briefcase"></i>
-                </button>
-                <span>Serviços</span>
-            </div>
-            <div class="button_actions">
-                <button class="btn">
-                    <i class="fa-solid fa-piggy-bank"></i>
-                </button>
-                <span>Metas</span>
-            </div>
-            <div class="button_actions">
-                <button class="btn">
-                    <i class="fa-solid fa-square-poll-vertical"></i>
-                </button>
-                <span>Aplicações</span>
-            </div>
-        </nav>
-
-        <section id="overview">
-
-            <div id="button_overview">
-                <button class="button_action active">
-                    <span>Histórico</span>
-                </button>
-
-                <button class="button_action">
-                    <span>Relatórios</span>
-                </button>
-            </div>
-
-            <div class="container">
-                <div id="historico">
-                    <div class="transacao">
-                        <div class="type">     
-                            <div class="content_img">
-                                <img src="https://placehold.co/40" alt="">
-                            </div>
-                            <div class="description">
-                                <span>Transação Ok</span>
-                                <span>09 de Setembro</span>
-                            </div>
-                        </div>
-                        <div class="valor color_error">
-                            <span>-R$30,07</span>
-                        </div>
-                    </div>
-                    <div class="transacao">
-                        <div class="content_img">
-                            <img src="https://placehold.co/40" alt="">
-                        </div>
-                        <div class="description">
-                            <span>Transação Ok</span>
-                            <span>09 de Setembro</span>
-                        </div>
-                        <div class="valor color_success">
-                            <span>+R$3000,00</span>
-                        </div>
-                    </div>
-                    <div class="transacao">
-                        <div class="content_img">
-                            <img src="https://placehold.co/40" alt="">
-                        </div>
-                        <div class="description">
-                            <span>Transação Ok</span>
-                            <span>09 de Setembro</span>
-                        </div>
-                        <div class="valor color_success">
-                            <span>+R$200,00</span>
-                        </div>
-                    </div>
-                    <div class="transacao">
-                        <div class="content_img">
-                            <img src="https://placehold.co/40" alt="">
-                        </div>
-                        <div class="description">
-                            <span>Transação Ok</span>
-                            <span>09 de Setembro</span>
-                        </div>
-                        <div class="valor color_error">
-                            <span>-R$312,22</span>
-                        </div>
-                    </div>
-                    <div class="transacao">
-                        <div class="content_img">
-                            <img src="https://placehold.co/40" alt="">
-                        </div>
-                        <div class="description">
-                            <span>Transação Ok</span>
-                            <span>09 de Setembro</span>
-                        </div>
-                        <div class="valor color_error">
-                            <span>-R$312,22</span>
-                        </div>
-                    </div>
-                    <div class="transacao">
-                        <div class="content_img">
-                            <img src="https://placehold.co/40" alt="">
-                        </div>
-                        <div class="description">
-                            <span>Transação Ok</span>
-                            <span>09 de Setembro</span>
-                        </div>
-                        <div class="valor color_error">
-                            <span>-R$30,07</span>
-                        </div>
-                    </div>
+    <div class="root">
+        <div id="side">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h5 class="sidebar-title">CapitaLearn</h5>
                 </div>
-    
-                <div id="relatorio">
-                    
+                <div class="sidebar-body">
+                    <nav>
+                        <ul>
+                            <li><i class="fa-solid fa-house"></i> Página Inicial</li>
+                            <li><i class="fa-solid fa-user"></i> Perfil</li>
+                            <li><i class="fa-solid fa-cog"></i>Configurações</li>
+                            <li><i class="fa-solid fa-chart-line"></i>Extrato</li>
+                            <li><i class="fa-solid fa-envelope"></i>Notificação</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sidebar-footer">
+                    &copy; Todos os direitos reservados
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+
+        <div id="application">
+            <header>
+                
+                <nav>
+                    <div>
+                        <button class="button_menu btn">
+                            <i class="fa-regular fa-user"></i>
+                        </button>
+                    </div>
+
+                    <div>
+                        <button class="button_menu btn button_canva" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="search_content">
+                    <label for="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input type="search" class="field" name="pesquisa" id="search" placeholder="Pesquisar">
+                </div>
+
+                <div id="amount">
+                    <div>
+                        <i class="fa-solid fa-eye-slash"></i>
+                        <span>Ocultar Saldo</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <div>
+                        <span id="value_total">R$ 5036,13</span>
+                    </div>
+                </div>
+            </header>
+
+            <main class="container">
+                <nav id="content_actions">
+                    <div class="button_actions">
+                        <button class="btn">
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </button>
+                        <span>Adicionar</span>
+                    </div>
+                    <div class="button_actions">
+                        <button class="btn">
+                            <i class="fa-solid fa-circle-minus"></i>
+                        </button>
+                        <span>Retirar</span>
+                    </div>
+                    <div class="button_actions">
+                        <button class="btn">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </button>
+                        <span>Serviços</span>
+                    </div>
+                    <div class="button_actions">
+                        <button class="btn">
+                            <i class="fa-solid fa-piggy-bank"></i>
+                        </button>
+                        <span>Metas</span>
+                    </div>
+                    <div class="button_actions">
+                        <button class="btn">
+                            <i class="fa-solid fa-square-poll-vertical"></i>
+                        </button>
+                        <span>Aplicações</span>
+                    </div>
+                </nav>
+
+                <section id="overview">
+
+                    <div id="button_overview">
+                        <button id="historico" class="button_action active">
+                            <span>Histórico</span>
+                        </button>
+
+                        <button id="relatorio" class="button_action">
+                            <span>Relatórios</span>
+                        </button>
+                    </div>
+
+                    <div class="container">
+                        <div id="historico" class="overview-content active">
+                            <div class="transacao">
+                                <div class="type">
+                                    <div class="content_img">
+                                        <img src="https://placehold.co/40" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <span>Transação Ok</span>
+                                        <span>09 de Setembro</span>
+                                    </div>
+                                </div>
+                                <div class="valor">
+                                    <span class="color_error">-R$30,07</span>
+                                </div>
+                            </div>
+                            <div class="transacao">
+                                <div class="type">
+                                    <div class="content_img">
+                                        <img src="https://placehold.co/40" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <span>Transação Ok</span>
+                                        <span>09 de Setembro</span>
+                                    </div>
+                                </div>
+                                <div class="valor">
+                                    <span class="color_success">+R$3000,00</span>
+                                </div>
+                            </div>
+                            <div class="transacao">
+                                <div class="type">
+                                    <div class="content_img">
+                                        <img src="https://placehold.co/40" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <span>Transação Ok</span>
+                                        <span>09 de Setembro</span>
+                                    </div>
+                                </div>
+                                <div class="valor">
+                                    <span class=" color_success">+R$200,00</span>
+                                </div>
+                            </div>
+                            <div class="transacao">
+                                <div class="type">
+                                    <div class="content_img">
+                                        <img src="https://placehold.co/40" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <span>Transação Ok</span>
+                                        <span>09 de Setembro</span>
+                                    </div>
+                                </div>
+                                <div class="valor">
+                                    <span class="color_error">-R$312,22</span>
+                                </div>
+                            </div>
+                            <div class="transacao">
+                                <div class="type">
+                                    <div class="content_img">
+                                        <img src="https://placehold.co/40" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <span>Transação Ok</span>
+                                        <span>09 de Setembro</span>
+                                    </div>
+                                </div>
+                                <div class="valor">
+                                    <span class="color_error">-R$312,22</span>
+                                </div>
+                            </div>
+                            <div class="transacao">
+                                <div class="type">
+                                    <div class="content_img">
+                                        <img src="https://placehold.co/40" alt="">
+                                    </div>
+                                    <div class="description">
+                                        <span>Transação Ok</span>
+                                        <span>09 de Setembro</span>
+                                    </div>
+                                </div>
+                                <div class="valor">
+                                    <span class="color_error">-R$30,07</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="relatorio" class="overview-content">
+                            <div
+                                style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                                <i class="fa-solid fa-toolbox" style="font-size: 5rem;"></i>
+                                SERVIÇO EM ANDAMENTO
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">CapitaLearn</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                            style="background-color: #fff !important;"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <nav>
+                            <ul>
+                                <li><i class="fa-solid fa-house"></i> Página Inicial</li>
+                                <li><i class="fa-solid fa-user"></i> Perfil</li>
+                                <li><i class="fa-solid fa-cog"></i>Configurações</li>
+                                <li><i class="fa-solid fa-chart-line"></i>Extrato</li>
+                                <li><i class="fa-solid fa-envelope"></i>Notificação</li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="offcanvas-footer">
+                        &copy; Todos os direitos reservados
+                    </div>
+                </div>
+        </div>
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./public/js/index.js"></script>
 </body>
 
 </html>
